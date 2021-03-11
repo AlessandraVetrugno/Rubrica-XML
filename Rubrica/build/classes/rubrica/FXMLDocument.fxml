@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rubrica.FXMLDocumentController">
+    <children>
+      <Button fx:id="aggiungibt" layoutX="673.0" layoutY="47.0" mnemonicParsing="false" onAction="#Add" prefHeight="28.0" prefWidth="83.0" text="Aggiungi">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="elimina" layoutX="673.0" layoutY="103.0" mnemonicParsing="false" onAction="#Remove" prefHeight="27.0" prefWidth="83.0" text="Rimuovi">
+         <font>
+            <Font name="Thonburi" size="14.0" />
+         </font></Button>
+      <TextArea fx:id="NomeTxt" layoutX="14.0" layoutY="60.0" prefHeight="42.0" prefWidth="146.0" />
+      <TextArea fx:id="CognomeTxt" layoutX="167.0" layoutY="60.0" prefHeight="43.0" prefWidth="146.0" />
+      <TextArea fx:id="NumeroTxt" layoutX="319.0" layoutY="60.0" prefHeight="43.0" prefWidth="161.0" />
+      <TextArea fx:id="EmailTxt" layoutX="484.0" layoutY="60.0" prefHeight="43.0" prefWidth="171.0" />
+      <Label layoutX="15.0" layoutY="38.0" prefHeight="17.0" prefWidth="129.0" text="Nome" />
+      <Label layoutX="167.0" layoutY="38.0" prefHeight="17.0" prefWidth="83.0" text="Cognome" />
+      <Label layoutX="319.0" layoutY="38.0" text="Numero di telefono" />
+      <Label layoutX="484.0" layoutY="38.0" text="Indirizzo Email" />
+      <Button fx:id="ricercabt" layoutX="454.0" layoutY="159.0" mnemonicParsing="false" onAction="#Ricerca" prefHeight="25.0" prefWidth="69.0" text="Ricerca">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="ricerca" layoutX="14.0" layoutY="159.0" prefHeight="27.0" prefWidth="407.0" promptText="Ricerca:" />
+      <ScrollPane layoutX="-1.0" layoutY="213.0" prefHeight="338.0" prefWidth="620.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="618.0">
+               <children>
+                    <Label fx:id="listaLBL" alignment="TOP_LEFT" layoutY="1.0" minHeight="16" minWidth="69" prefHeight="995.0" prefWidth="626.0" text="qxiao" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="1.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button fx:id="salva" layoutX="680.0" layoutY="476.0" mnemonicParsing="false" onAction="#save" prefHeight="27.0" prefWidth="69.0" text="Salva" textFill="#0eed33">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="23.0" layoutY="130.0" text="Ricerca contatto per nome o cognome:" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="146.0" text="RUBRICA:">
+         <font>
+            <Font name="Times Roman" size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
